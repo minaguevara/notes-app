@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdSave } from "react-icons/md";
 
 const AddNote = ({ handleAddNote }) => {
     const [noteText, setNoteText] = useState('');
@@ -30,11 +31,10 @@ const AddNote = ({ handleAddNote }) => {
 
             <div className="note-footer">
                 <small>{characterLimit - noteText.length} Remaining</small>
-                <button 
-                    className="btn save"
-                    onClick={handleSaveClick}>
-                        Save
-                </button>
+                <MdSave 
+                    className='save-icon' 
+                    size='1.3em'
+                    onClick={handleSaveClick}/>
             </div>
         </div>
     );

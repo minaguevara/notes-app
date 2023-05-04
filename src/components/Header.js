@@ -1,14 +1,14 @@
 import React from 'react';
-import { FaMoon } from "react-icons/fa";
+import { BsSun } from "react-icons/bs";
 
 const Header = ({ handleToggleDarkMode }) => {
     return (
         <div className='header'>
-            <h1>My Notes</h1>
+            <h1>Notes</h1>
             <button 
                 className='btn toggle'
                 onClick={() => handleToggleDarkMode((previousDarkMode) => !previousDarkMode)}>
-                <FaMoon/>
+                <BsSun/>
             </button>
         </div>
     );

@@ -9,14 +9,24 @@ const App = () => {
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
-      text: "My first note...",
+      text: "Delete this note...",
       date: date.toLocaleDateString()
     },
   ]);
 
   const [searchText, setSearchText] = useState('');
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(
+      localStorage.getItem('notes-app-data')
+    );
+
+    if(savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, []);
 
   useEffect(() => {
     localStorage.setItem(
