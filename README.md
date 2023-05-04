@@ -21,8 +21,8 @@ This app is perfect for anyone who needs a simple, lightweight notes app that th
 - Open http://localhost:3000 to view it in the browser
 
 ## Technologies Used
-React
-HTML/CSS
-JavaScript
+- React
+- HTML/CSS
+- JavaScript
 
 Feel free to use this app as a starting point for your own projects, or contribute to the project to make it better.
